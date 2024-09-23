@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .request-quote-section {
+    background-color: #f9f9f9;
+    padding: 40px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .request-quote-section h2 {
+    color: #2a7fba;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .request-quote-section p {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1em;
+  }
+  
+  .quote-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .quote-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .quote-form input,
+  .quote-form select,
+  .quote-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .quote-form button {
+    padding: 12px 20px;
+    background-color: #2a7fba;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .quote-form button:hover {
+    background-color: #1b5c89;
+  }
+  
+  .quote-form textarea {
+    resize: vertical;
+  }
+  

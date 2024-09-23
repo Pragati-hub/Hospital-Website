@@ -59,7 +59,7 @@
   border: 1px solid #ddd;
   padding: 10px;
   display: none;
-  z-index: 999999999999999999999999;
+  z-index: 9999999999999999999999;
 }
 
 .flag-list li {
@@ -255,7 +255,7 @@ nav {
 }
 
 .header-contents button{
-  border: nonw;
+  border: none;
   color:#747474;
   font-weight:500;
   padding: 1vw 2.3vw;
@@ -273,7 +273,7 @@ nav {
   width: 70%; /* 30% gap margin from right side */
   margin-right: 30%;
   margin-left:10px;
-  z-index: 10000000;
+  z-index:99;
 }
 
 .navbar ul {

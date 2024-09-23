@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a Quote | Hospital</title>
+  <link rel="stylesheet" href="request-quote.css">
+</head>
+<body>
+
+  <section id="request-quote" class="request-quote-section">
+    <div class="container">
+      <h2>Request a Quote</h2>
+      <p>Get an estimated cost for treatments or procedures tailored to your needs.</p>
+
+      <form action="submit_quote_request.php" method="POST" class="quote-form">
+        <!-- Patient's Name -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <!-- Contact Information -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <!-- Dropdown for Treatment Selection -->
+        <label for="service">Select Treatment/Service:</label>
+        <select id="service" name="service" required>
+          <option value="">-- Select a Treatment/Service --</option>
+          <option value="Cardiology Consultation">Cardiology Consultation</option>
+          <option value="Orthopedic Surgery">Orthopedic Surgery</option>
+          <option value="Health Checkup Package">Health Checkup Package</option>
+          <option value="Cosmetic Surgery">Cosmetic Surgery</option>
+          <option value="Maternity Care">Maternity Care</option>
+          <!-- Add more services as needed -->
+        </select>
+
+        <!-- Optional: Preferred Appointment Date -->
+        <label for="appointment-date">Preferred Appointment Date:</label>
+        <input type="date" id="appointment-date" name="appointment-date">
+
+        <!-- Additional Notes -->
+        <label for="notes">Additional Information (Optional):</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Enter any specific requirements or health conditions"></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Request</button>
+      </form>
+
+      <p>We will contact you within 24-48 hours with an estimated cost based on your selected treatment or service.</p>
+    </div>
+  </section>
+
+</body>
+</html>

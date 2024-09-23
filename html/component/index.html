@@ -8,8 +8,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
         
+                
     </head>
     <body>
       <section class="section-container">
@@ -96,10 +96,10 @@
                   <!-- add more destination options as needed -->
                 </ul>
               </li>
-              <li><a href="#">Hospitals</a></li>
+              <li><a href="#hospitals">Hospitals</a></li>
               <li><a href="#FAQs">FAQs</a></li>
               <li><a href="blog.html">Blog</a></li>
-              <li><a href="#">Request A Quote</a></li>
+              <li><a href="request-quote.html">Request A Quote</a></li>
               
                 <!-- <button class="search-button">
                   <img class="search-icon" src="search-icon.png" alt="Search icon">
@@ -417,7 +417,7 @@
      <!-- Hospitalss -->
 
 <div class="hospital">
-  <h3>Hospital</h3>
+  <h3><a id="hospitals">Hospital</a></h3>
   <h2>Recommanded <span>Hospitals</span></h2>
 
   <div class="owl-carousel owl-theme hospital_cards">
@@ -428,7 +428,6 @@
               <h3>Apollo Hospital</h3>
               <h4>Banglore</h4>
           </div>
-  
       </div>
   
       <div class="item hospital_item">
@@ -454,7 +453,7 @@
       <div class="item hospital_item">
   
           <div class="hospital_card">
-              <img src="./photos/hospital(1).jpeg" alt="">
+              <img src="./photos/hospital(1).jpg" alt="">
               <h3>Apollo Hospital</h3>
               <h4>Banglore</h4>
           </div>
@@ -621,8 +620,12 @@
     $('.owl-carousel').owlCarousel({
 loop:true,
 margin:10,
-// nav:true,
-// dot:false,
+ nav:false,
+ autoplay:true,
+ autoplayTimeout:1000,
+ stagePadding:50,
+
+dots:false,
 responsive:{
     0:{
         items:1
@@ -635,6 +638,7 @@ responsive:{
     }
 }
 })
+
 </script>
                 <script src="script.js"></script>
     </body>
